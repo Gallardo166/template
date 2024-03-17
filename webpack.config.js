@@ -10,7 +10,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '', // INSERT TITLE HERE
+      template: "./src/index.html",
+      filename: "index.html",
+      inject: "head",
+      scriptLoading: "defer",
     }),
   ],
   output: {
